@@ -1,7 +1,5 @@
 const https = require('https');
 
-
-
 function fetch(url) {
     return new Promise((res, rej) => {
         https.get('https://timchen.tk/api/' + url, resp => {
@@ -20,6 +18,7 @@ function fetch(url) {
         });
     })
 }
+
 
 
 module.exports = {
